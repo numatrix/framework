@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+    stages {
+        stage("build") {
+            steps {
+                sh "dotnet build Matrix.sln"
+            }
+        }
+        steps("publish") {
+            steps {
+                sh "nuget push ./Matrix/bin/Release/Matrix.System.1.0.0.nupkg $password -src $nuget"
+                sh "nuget push ./Matrix/bin/Release/Matrix.Framework.1.0.0.nupkg $password -src $nuget"
+            }
+        }
+    }
+}
