@@ -4,5 +4,22 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>Matrix.System</PackageId>
     <Version>1.0.0</Version>
+    <Authors>Paramesh Gunasekaran</Authors>
+    <Company>paramg.com</Company>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Description>Matrix base class library</Description>
+    <Copyright>Copyright (C) 2019 Paramesh Gunasekaran</Copyright>
+    <PackageProjectUrl>https://github.com/numatrix/framework</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/numatrix/framework.git</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>matrix,library,tools</PackageTags>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 </Project>

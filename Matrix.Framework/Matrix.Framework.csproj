@@ -2,6 +2,18 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Authors>Paramesh Gunasekaran</Authors>
+    <Company>paramg.com</Company>
+    <Product>Matrix</Product>
+    <Copyright>Copyright (C) 2019 Paramesh Gunasekaran</Copyright>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>matrix,library,framework</PackageTags>
+    <RepositoryUrl>https://github.com/numatrix/framework.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/numatrix/framework</PackageProjectUrl>
+    <Description>Matrix platform framework</Description>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Ensure.That" Version="8.1.1" />
@@ -16,5 +28,11 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="2.2.0" />
     <PackageReference Include="RestSharp" Version="106.6.9" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 </Project>
